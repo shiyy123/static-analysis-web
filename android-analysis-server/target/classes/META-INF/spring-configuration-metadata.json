@@ -1,0 +1,61 @@
+{
+  "groups": [{
+    "name": "rpcServer",
+    "type": "com.taocoder.ourea.core.config.ThriftServerConfig",
+    "sourceType": "cn.iselab.android.analysis.server.configure.RpcServerConfiguration",
+    "sourceMethod": "serverConfig()"
+  }],
+  "properties": [
+    {
+      "name": "rpcServer.daemon-run",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.direct-invoke",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.group",
+      "type": "java.lang.String",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.max-worker-threads",
+      "type": "java.lang.Integer",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.min-worker-threads",
+      "type": "java.lang.Integer",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.port",
+      "type": "java.lang.Integer",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.server-event-handler",
+      "type": "org.apache.thrift.server.TServerEventHandler",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.status",
+      "type": "java.lang.Boolean",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.version",
+      "type": "java.lang.String",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    },
+    {
+      "name": "rpcServer.weight",
+      "type": "java.lang.Integer",
+      "sourceType": "com.taocoder.ourea.core.config.ThriftServerConfig"
+    }
+  ],
+  "hints": []
+}

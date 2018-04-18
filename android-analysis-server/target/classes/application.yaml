@@ -1,0 +1,79 @@
+spring.profiles.active: dev
+
+spring:
+    datasource:
+        driver-class-name: com.mysql.jdbc.Driver
+        # Keep the connection alive if idle for a long time (needed in production)
+        testWhileIdle: true
+        validationQuery: SELECT 1
+    # Show or not log for each sql query
+    jpa:
+        show-sql: true
+        hibernate:
+          ddl-auto: update
+    # Hibernate ddl auto (create, create-drop, update)
+    hibernate:
+        ddl-auto: validate
+        # Naming strategy
+        naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    # The SQL dialect makes Hibernate generate better SQL for the chosen database
+    properties.hibernate.dialect: org.hibernate.dialect.MySQL5Dialect
+
+
+
+---
+# 开发环境
+spring:
+    profiles: dev
+    datasource:
+        url: jdbc:mysql://localhost:3306/static_analysis # please modify manually
+        username: root # please modify manually
+        password: 123 # please modify manually
+
+# Use test-zookeeper in dev profile, because you can't deploy all related services locally
+rpcServer:
+    port: 9100
+    zkAddress: 118.178.131.206:2181 # zkAddress where you register your service
+
+# Http server port
+server:
+    port: 8080
+
+# Log4J2 config file
+logging.config: classpath:log4j2.yaml
+#logging.access.enabled: false
+
+---
+# 测试服务环境
+spring:
+    profiles: test
+    datasource:
+        url: jdbc:mysql://test-mysql:3306/android-analysis # please modify manually
+        username: test-username # please modify manually
+        password: test-password # please modify manually
+
+rpcServer:
+    port: 9100
+    zkAddress: 10.27.2.223:2181
+
+logging.config: classpath:log4j2.test.yaml
+logging.access.directory: /home/share/log
+
+spring.jpa.show-sql: false
+
+---
+# 线上服务环境
+spring:
+    profiles: online
+    datasource:
+        url: jdbc:mysql://online-mysql:3306/android-analysis # please modify manually
+        username: test-username # please modify manually
+        password: test-password # please modify manually
+
+server:
+    port: 8080
+
+logging.config: classpath:log4j2.online.yaml
+logging.access.directory: /home/share/log/android-analysis
+
+spring.jpa.show-sql: false

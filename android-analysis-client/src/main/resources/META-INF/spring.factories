@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+cn.iselab.android.analysis.client.autoconfigure.AndroidAnalysisClientAutoConfiguration

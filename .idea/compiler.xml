@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="android-analysis-client" />
+        <module name="android-analysis-common" />
+        <module name="android-analysis-job" />
+        <module name="android-analysis-server" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="android-analysis" target="1.8" />
+      <module name="android-analysis-client" target="1.8" />
+      <module name="android-analysis-common" target="1.6" />
+      <module name="android-analysis-job" target="1.8" />
+      <module name="android-analysis-server" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
