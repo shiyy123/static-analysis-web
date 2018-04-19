@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileOutputStream;
 import java.io.InputStreamReader;
 import java.io.PrintWriter;
+
+import cn.iselab.android.analysis.server.constant.ScanConst;
 import cn.iselab.android.analysis.server.service.AaptService;
 import org.springframework.stereotype.Service;
 
@@ -22,17 +24,17 @@ public class AaptServiceImpl implements AaptService {
      */
     @Override
     public void analysis(String md5) {
-        File f = new File("H:/demo/zipped_apks/" + md5 + "/aapt.txt");
+        File f = new File(ScanConst.DecompressFilePath + md5 + "/aapt.txt");
         BufferedReader read = null;
         Runtime run = Runtime.getRuntime();
         StringBuffer bf = null;
         PrintWriter pw = null;
         try {
             Process p = run.exec(
-                    "./android-analysis-server/src/main/resources/tools/aapt.exe dump badging H:/demo/zipped_apks/" + md5 + "/" + md5 + ".apk");
+                    "./android-analysis-server/src/main/resources/tools/aapt.exe dump badging" + ScanConst.DecompressFilePath + md5 + "/" + md5 + ".apk");
             read = new BufferedReader(new InputStreamReader(p.getInputStream(),"UTF8"));
             bf = new StringBuffer();
-            String line = "";
+            String line;
             while ((line = read.readLine()) != null) {
                 if (line.contains("application:")) {
                     String str1 = line.substring(line.indexOf("'") + 1);

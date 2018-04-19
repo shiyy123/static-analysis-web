@@ -1,6 +1,7 @@
 package cn.iselab.android.analysis.server.service.impl;
 
 import cn.iselab.android.analysis.server.service.KivulService;
+import cn.iselab.android.analysis.server.web.utils.FileOperationUtils;
 import org.apache.commons.io.FileUtils;
 import org.springframework.stereotype.Service;
 
@@ -10,7 +11,6 @@ import java.net.URL;
 import java.nio.MappedByteBuffer;
 import java.nio.channels.FileChannel;
 import java.security.MessageDigest;
-import java.util.UUID;
 import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
@@ -18,7 +18,7 @@ import java.util.zip.ZipInputStream;
 public class KivulServiceImpl implements KivulService{
     @Override
     public String downloadFile(String url, String apkID) {
-        String dir="H:/demo/apks/";
+        String dir="/home/cary/Test/demo/apks/";
         String name=getFileNameFromUrl(url);
         String fileName=apkID+"-"+name;
         try {
@@ -98,18 +98,7 @@ public class KivulServiceImpl implements KivulService{
 
     @Override
     public String getMD5(File file) {
-        String value = "";// apk文件md5值
-        try {
-            FileInputStream in = new FileInputStream(file);
-            MappedByteBuffer byteBuffer = in.getChannel().map(FileChannel.MapMode.READ_ONLY, 0, file.length());
-            MessageDigest md5 = MessageDigest.getInstance("MD5");
-            md5.update(byteBuffer);
-            BigInteger bi = new BigInteger(1, md5.digest());
-            value = bi.toString(16);
-        } catch (Exception e1) {
-            e1.printStackTrace();
-        }
-        return value;
+        return FileOperationUtils.getMD5(file);
     }
 
     @Override

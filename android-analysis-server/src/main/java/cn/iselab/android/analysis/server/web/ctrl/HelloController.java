@@ -1,5 +1,6 @@
 package cn.iselab.android.analysis.server.web.ctrl;
 
+import cn.iselab.android.analysis.server.constant.ResStatus;
 import cn.iselab.android.analysis.server.service.ApkAnalysisService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +20,7 @@ public class HelloController {
         int result=as.analysis(MD5);
 
         if(result==1){
-            response.setStatus(2000);
+            response.setStatus(ResStatus.analysis_error);
         }
         //new Thread(new Thread1(MD5)).start();
     }

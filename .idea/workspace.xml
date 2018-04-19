@@ -2,8 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a17d6f6a-03e3-48fe-afcd-40240f52a1e5" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/UrlConst.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/AaptServiceImpl.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/AaptServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ApkAnalysisServiceImpl.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ApkAnalysisServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/CertInfoServiceImpl.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/CertInfoServiceImpl.java" />
       <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.java" />
-      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulServiceImpl.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ManifestServiceImpl.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ManifestServiceImpl.java" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/HelloController.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/HelloController.java" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/UploadController.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/UploadController.java" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/BaseInfoLogicImpl.java" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/BaseInfoLogicImpl.java" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/src/main/resources/tools/aapt.exe" afterPath="$PROJECT_DIR$/android-analysis-server/src/main/resources/tools/aapt.exe" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/AaptServiceImpl.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/AaptServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/ApkAnalysisServiceImpl.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/ApkAnalysisServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/CertInfoServiceImpl.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/CertInfoServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/KivulServiceImpl.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/KivulServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/ManifestServiceImpl.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/service/impl/ManifestServiceImpl.class" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/web/ctrl/UploadController.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/web/ctrl/UploadController.class" />
+      <change beforePath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/web/logic/impl/BaseInfoLogicImpl.class" afterPath="$PROJECT_DIR$/android-analysis-server/target/classes/cn/iselab/android/analysis/server/web/logic/impl/BaseInfoLogicImpl.class" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/android-analysis-client/target/" />
@@ -19,31 +37,104 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.yaml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml">
+      <file leaf-file-name="SampleController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/SampleController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="-792">
+              <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/Application.java">
+      <file leaf-file-name="KiVulController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/KiVulController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="900">
-              <caret line="97" column="2" lean-forward="false" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
+            <state relative-caret-position="-893">
+              <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="KivulAnalysisServiceImpl.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.java">
+      <file leaf-file-name="HelloController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
-              <caret line="110" column="30" lean-forward="false" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
+            <state relative-caret-position="209">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ResStatus.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ResStatus.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="114">
+              <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UploadController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/UploadController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="647">
+              <caret line="94" column="17" lean-forward="false" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AnalysisDataController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/AnalysisDataController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AaptService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/AaptService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ScanConst.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ScanConst.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="323">
+              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AaptServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/AaptServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+              <folding>
+                <element signature="e#2812#2813#0" expanded="true" />
+                <element signature="e#2840#2841#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseInfoLogicImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/BaseInfoLogicImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="158">
+              <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -51,9 +142,24 @@
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>H:/</find>
+      <find>8080</find>
+      <find>/analysis</find>
+      <find>getMD5</find>
+      <find>DebugUtils</find>
+      <find>/ho</find>
+      <find>$PROJECT_DIR$/../../../..</find>
+      <find>url</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -67,8 +173,25 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/dao/Apk_vulnerabilityDao.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/FormatFileServiceImpl.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ManifestServiceImpl.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ApkAnalysisServiceImpl.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/CertInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/BaseInfoLogicImpl.java" />
         <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ScanType.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/utils/FileInfoUtils.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulServiceImpl.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ScanConst.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/utils/DebugUtils.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/utils/FileOperationUtils.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/AaptServiceImpl.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ResStatus.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/HelloController.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/UploadController.java" />
+        <option value="$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/AnalysisDataController.java" />
       </list>
     </option>
   </component>
@@ -92,11 +215,13 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="47" />
-    <option name="y" value="24" />
-    <option name="width" value="1319" />
-    <option name="height" value="744" />
+    <option name="y" value="72" />
+    <option name="width" value="1277" />
+    <option name="height" value="675" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
@@ -112,38 +237,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-static-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-static-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
               <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-static-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
               <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-static-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
               <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-static-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
               <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -151,7 +272,7 @@
             </path>
             <path>
               <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-static-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
               <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -160,24 +281,108 @@
             </path>
             <path>
               <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
-              <item name="android-static-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
+              <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="constant" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
+              <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
+              <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
+              <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
+              <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="ctrl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
+              <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
+              <item name="web" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
               <item name="android-analysis-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="android-analysis" type="b2602c69:ProjectViewProjectNode" />
+              <item name="static-analysis-web" type="462c0819:PsiDirectoryNode" />
+              <item name="tool" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../static-analysis-front" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="extract.method.default.visibility" value="private" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="cn.iselab.android.analysis.server.web.utils.FileOperationUtils" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -296,47 +501,57 @@
       <workItem from="1523521085275" duration="134000" />
       <workItem from="1523522861163" duration="163000" />
       <workItem from="1523601232862" duration="53000" />
+      <workItem from="1524055974435" duration="1025000" />
+      <workItem from="1524103835683" duration="27408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="350000" />
+    <option name="totallyTimeSpent" value="28783000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="24" width="1319" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.62830484" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25765908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33592534" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970452" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32914376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.0" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -346,62 +561,432 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="2" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml">
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/dao/RecentAnalysisDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="95">
+          <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/dao/CheckListDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="1" lean-forward="false" selection-start-line="11" selection-start-column="1" selection-end-line="11" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/Vulnerability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-266">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/SampleData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="15" column="20" lean-forward="false" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/BaseData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="12" column="18" lean-forward="false" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/CertInfo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/CheckList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="760">
+          <caret line="55" column="16" lean-forward="false" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/Apk_vulnerability.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="3" lean-forward="true" selection-start-line="9" selection-start-column="3" selection-end-line="9" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/dao/ApkDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="19" column="47" lean-forward="true" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/RecentAnalysis.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="12" column="20" lean-forward="false" selection-start-line="12" selection-start-column="20" selection-end-line="12" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/CombineService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="6" column="17" lean-forward="false" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/ApkService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/CombineServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-74">
+          <caret line="11" column="61" lean-forward="false" selection-start-line="11" selection-start-column="61" selection-end-line="11" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/data/FormatData/Base64VO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="18" lean-forward="false" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/data/wrapper/SampleDataWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/data/wrapper/VunlerabilityListWrapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="17" column="27" lean-forward="false" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/AnalysisLogicImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/ManifestLogicImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/SampleLogicImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ManifestServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="282" column="45" lean-forward="false" selection-start-line="282" selection-start-column="45" selection-end-line="282" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/ApkAnalysisServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="86" column="42" lean-forward="false" selection-start-line="86" selection-start-column="27" selection-end-line="86" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/CertInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="67" column="126" lean-forward="false" selection-start-line="67" selection-start-column="126" selection-end-line="67" selection-end-column="126" />
+          <folding>
+            <element signature="e#3543#3544#0" expanded="false" />
+            <element signature="e#3585#3586#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1188">
-          <caret line="66" column="0" lean-forward="true" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+        <state relative-caret-position="157">
+          <caret line="77" column="17" lean-forward="false" selection-start-line="77" selection-start-column="17" selection-end-line="77" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/data/Apk.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="23" column="23" lean-forward="true" selection-start-line="23" selection-start-column="23" selection-end-line="23" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="201">
+          <caret line="74" column="0" lean-forward="true" selection-start-line="74" selection-start-column="0" selection-end-line="74" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/Application.java">
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/resources/log4j2.yaml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1764">
-          <caret line="98" column="26" lean-forward="false" selection-start-line="98" selection-start-column="26" selection-end-line="98" selection-end-column="26" />
+        <state relative-caret-position="228">
+          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/resources/application.yaml">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="-623">
+          <caret line="7" column="28" lean-forward="true" selection-start-line="7" selection-start-column="28" selection-end-line="7" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulAnalysisServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/configure/RpcServerConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="110" column="30" lean-forward="false" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
+        <state relative-caret-position="356">
+          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+          <folding>
+            <element signature="e#1144#1145#0" expanded="false" />
+            <element signature="e#1191#1192#0" expanded="false" />
+            <element signature="e#1263#1264#0" expanded="false" />
+            <element signature="e#1314#1315#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/rpc/ServerRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="31" column="13" lean-forward="false" selection-start-line="31" selection-start-column="13" selection-end-line="31" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/Application.java">
+    <entry file="file://$PROJECT_DIR$/android-analysis-common/src/main/java/cn/iselab/android/analysis/thrift/AndroidAnalysisThrift.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="97" column="2" lean-forward="false" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="2" />
+        <state relative-caret-position="-3002">
+          <caret line="40" column="13" lean-forward="false" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/rpc/RpcHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="12" column="48" lean-forward="false" selection-start-line="12" selection-start-column="48" selection-end-line="12" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/FormatFileServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="164" column="5" lean-forward="false" selection-start-line="164" selection-start-column="5" selection-end-line="164" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/ApkAnalysisService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="19" lean-forward="false" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/UrlConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="18" lean-forward="false" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ScanType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="8" lean-forward="true" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/jboss/spec/javax/servlet/jboss-servlet-api_3.1_spec/1.0.0.Final/jboss-servlet-api_3.1_spec-1.0.0.Final.jar!/javax/servlet/http/HttpServletResponse.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="91" column="8" lean-forward="false" selection-start-line="91" selection-start-column="8" selection-end-line="91" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/KivulService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/KivulServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="101" column="5" lean-forward="true" selection-start-line="101" selection-start-column="5" selection-end-line="101" selection-end-column="5" />
+          <folding>
+            <element signature="e#3266#3267#0" expanded="false" />
+            <element signature="e#3320#3321#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/utils/DebugUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/utils/FileOperationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="93" column="17" lean-forward="true" selection-start-line="93" selection-start-column="17" selection-end-line="93" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/logic/impl/BaseInfoLogicImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ScanConst.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/AaptService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="23" lean-forward="false" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/service/impl/AaptServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
+          <folding>
+            <element signature="e#2812#2813#0" expanded="true" />
+            <element signature="e#2840#2841#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/KiVulController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-893">
+          <caret line="55" column="13" lean-forward="false" selection-start-line="55" selection-start-column="13" selection-end-line="55" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/constant/ResStatus.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="50" lean-forward="false" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/HelloController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/SampleController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-792">
+          <caret line="35" column="13" lean-forward="false" selection-start-line="35" selection-start-column="13" selection-end-line="35" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/UploadController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="647">
+          <caret line="94" column="17" lean-forward="false" selection-start-line="94" selection-start-column="17" selection-end-line="94" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/android-analysis-server/src/main/java/cn/iselab/android/analysis/server/web/ctrl/AnalysisDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="36" column="48" lean-forward="true" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding />
         </state>
       </provider>

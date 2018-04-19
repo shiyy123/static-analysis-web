@@ -73,7 +73,7 @@ public class ApkAnalysisServiceImpl implements ApkAnalysisService {
         RecentAnalysis recent=recentAnalysisDao.findByApkID(apkID);
         //if(true){
         if (recent==null) {// 如果Recent中没有待测apk
-            File report = new File("H:/demo/zipped_apks/" + MD5 + "/report.txt");
+            File report = new File("/home/cary/Test/demo/zipped_apks/" + MD5 + "/report.txt");
             Date date=new Date();
             SimpleDateFormat df = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
             String now=df.format(date);
@@ -83,8 +83,8 @@ public class ApkAnalysisServiceImpl implements ApkAnalysisService {
                 apkDao.update("0",MD5);
                 System.out.println("[Info] The apk had not been analyzed.");
                 System.out.println("[Info] Start androbugs analysis...");
-                Process process = run.exec("python H:/AndroBugs_list/AndroBugs/androbugs.py -f "
-                        + "H:/demo/zipped_apks/" + MD5 + "/" + MD5 + ".apk" + " -o H:/demo/zipped_apks/" + MD5);
+                Process process = run.exec("python /home/cary/Project/AndroBugs_Framework/androbugs.py -f "
+                        + "/home/cary/Test/demo/zipped_apks/" + MD5 + "/" + MD5 + ".apk" + " -o /home/cary/Test/demo/zipped_apks/" + MD5);
                 br = new BufferedReader(new InputStreamReader(process.getInputStream(),"UTF8"));
                 String lineText = "";
                 while ((lineText = br.readLine()) != null) {

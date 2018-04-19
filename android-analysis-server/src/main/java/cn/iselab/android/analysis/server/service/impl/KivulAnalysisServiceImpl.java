@@ -69,13 +69,13 @@ public class KivulAnalysisServiceImpl implements KivulAnalysisService {
 
         Runtime run = Runtime.getRuntime();
         BufferedReader br = null;
-//        File report = new File("H:/demo/zipped_apks/" + MD5 + "/report.txt");
+//        File report = new File("/home/cary/Test/demo/zipped_apks/" + MD5 + "/report.txt");
         File report = new File("/home/cary/Project/static-analysis-web/demo/zipped_apks/" + MD5 + "/report.txt");
         try {
             System.out.println("[Info] The apk had not been analyzed.");
             System.out.println("[Info] Start androbugs analysis...");
-            Process process = run.exec("python H:/AndroBugs_list/AndroBugs/androbugs.py -f "
-                    + "H:/demo/zipped_apks/" + MD5 + "/" + MD5 + ".apk" + " -o H:/demo/zipped_apks/" + MD5);
+            Process process = run.exec("python /home/cary/Project/AndroBugs_Framework/androbugs.py -f "
+                    + "/home/cary/Test/demo/zipped_apks/" + MD5 + "/" + MD5 + ".apk" + " -o /home/cary/Test/demo/zipped_apks/" + MD5);
             br = new BufferedReader(new InputStreamReader(process.getInputStream(), "UTF8"));
             String lineText = "";
             while ((lineText = br.readLine()) != null) {

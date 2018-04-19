@@ -34,20 +34,20 @@ public class BaseInfoLogicImpl implements BaseInfoLogic {
         }
 
 
-        String apk_path = "H:/demo/apks/" + apkName;
+        String apk_path = "/home/cary/Test/demo/apks/" + apkName;
         // 获取apk文件md5
         File f = new File(apk_path);
         String MD5 = kivulService.getMD5(f);
         String SHA1=kivulService.getSHA1(f);
         String SHA256=kivulService.getSHA256(f);
 
-        boolean unzipSuccess=kivulService.unzip(apk_path, "H:/demo/zipped_apks/"+MD5);
+        boolean unzipSuccess=kivulService.unzip(apk_path, "/home/cary/Test/demo/zipped_apks/"+MD5);
         if(!unzipSuccess){
             //解压apk失败
             return null;
         }
 
-        kivulService.copyFile(apk_path,"H:/demo/zipped_apks/"+MD5+"/"+MD5+".apk");
+        kivulService.copyFile(apk_path,"/home/cary/Test/demo/zipped_apks/"+MD5+"/"+MD5+".apk");
 
         // 获取文件大小
         DecimalFormat df = new DecimalFormat("#.##");
