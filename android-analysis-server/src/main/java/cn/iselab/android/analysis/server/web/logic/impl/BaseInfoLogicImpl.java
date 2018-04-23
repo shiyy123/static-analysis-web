@@ -1,5 +1,6 @@
 package cn.iselab.android.analysis.server.web.logic.impl;
 
+import cn.iselab.android.analysis.server.constant.ScanConst;
 import cn.iselab.android.analysis.server.data.Vulnerability;
 import cn.iselab.android.analysis.server.service.AaptService;
 import cn.iselab.android.analysis.server.service.CertInfoService;
@@ -34,20 +35,20 @@ public class BaseInfoLogicImpl implements BaseInfoLogic {
         }
 
 
-        String apk_path = "/home/cary/Test/demo/apks/" + apkName;
+        String apk_path = ScanConst.ScanFilePath + apkName;
         // 获取apk文件md5
         File f = new File(apk_path);
         String MD5 = kivulService.getMD5(f);
         String SHA1=kivulService.getSHA1(f);
         String SHA256=kivulService.getSHA256(f);
 
-        boolean unzipSuccess=kivulService.unzip(apk_path, "/home/cary/Test/demo/zipped_apks/"+MD5);
+        boolean unzipSuccess=kivulService.unzip(apk_path, ScanConst.DecompressFilePath+MD5);
         if(!unzipSuccess){
             //解压apk失败
             return null;
         }
 
-        kivulService.copyFile(apk_path,"/home/cary/Test/demo/zipped_apks/"+MD5+"/"+MD5+".apk");
+        kivulService.copyFile(apk_path,ScanConst.DecompressFilePath+MD5+"/"+MD5+".apk");
 
         // 获取文件大小
         DecimalFormat df = new DecimalFormat("#.##");

@@ -1,5 +1,6 @@
 package cn.iselab.android.analysis.server.service.impl;
 
+import cn.iselab.android.analysis.server.constant.ScanConst;
 import cn.iselab.android.analysis.server.service.KivulService;
 import cn.iselab.android.analysis.server.web.utils.FileOperationUtils;
 import org.apache.commons.io.FileUtils;
@@ -18,7 +19,7 @@ import java.util.zip.ZipInputStream;
 public class KivulServiceImpl implements KivulService{
     @Override
     public String downloadFile(String url, String apkID) {
-        String dir="/home/cary/Test/demo/apks/";
+        String dir= ScanConst.ScanFilePath;
         String name=getFileNameFromUrl(url);
         String fileName=apkID+"-"+name;
         try {

@@ -1,5 +1,6 @@
 package cn.iselab.android.analysis.server.service.impl;
 
+import cn.iselab.android.analysis.server.constant.ScanConst;
 import cn.iselab.android.analysis.server.dao.CheckListDao;
 import cn.iselab.android.analysis.server.data.CheckList;
 import cn.iselab.android.analysis.server.data.Dvm_permission;
@@ -93,10 +94,10 @@ public class ManifestServiceImpl implements ManifestService {
         Process process = null;
         StringBuffer bf = null;
         // unzip(file,"I:/demo/zipped_apks/"+file);
-        File f = new File("/home/cary/Test/demo/zipped_apks/" + MD5 + "/output.xml");
+        File f = new File(ScanConst.DecompressFilePath + MD5 + "/output.xml");
         Runtime run = Runtime.getRuntime();
         process = run.exec("java -jar ./android-analysis-server/src/main/resources/tools/APKParser.jar "
-                + "/home/cary/Test/demo/zipped_apks/" + MD5 + "/" + MD5 + ".apk");
+                + ScanConst.DecompressFilePath + MD5 + "/" + MD5 + ".apk");
         reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
         String line;
         bf = new StringBuffer();
@@ -171,7 +172,7 @@ public class ManifestServiceImpl implements ManifestService {
      * 解析manifest，获取一些基本元素信息
      */
     private void get_manifest() throws Exception{
-        File file = new File("/home/cary/Test/demo/zipped_apks/" + MD5 + "/output.xml");
+        File file = new File(ScanConst.ScanFilePath + MD5 + "/output.xml");
         SAXReader reader = new SAXReader();
         Document document = reader.read(file);
         this.doc = document;
@@ -280,7 +281,7 @@ public class ManifestServiceImpl implements ManifestService {
      * 源代码中是直接处理成html代码存到数据库中
      */
     private void analysis_manifest() throws Exception{
-        File file = new File("/home/cary/Test/demo/zipped_apks/" + MD5 + "/output.xml");
+        File file = new File(ScanConst.DecompressFilePath + MD5 + "/output.xml");
         SAXReader reader = new SAXReader();
         Document document = null;
         document = reader.read(file);

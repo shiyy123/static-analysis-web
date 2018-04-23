@@ -1,5 +1,6 @@
 package cn.iselab.android.analysis.server.service.impl;
 
+import cn.iselab.android.analysis.server.constant.ScanConst;
 import cn.iselab.android.analysis.server.dao.ApkDao;
 import cn.iselab.android.analysis.server.dao.CertInfoDao;
 import cn.iselab.android.analysis.server.data.Apk;
@@ -40,7 +41,7 @@ public class CertInfoServiceImpl implements CertInfoService {
         StringBuffer bf = null;
         String certFile = "";
 
-        File parent = new File("/home/cary/Test/demo/zipped_apks/" + MD5 + "/META-INF/");
+        File parent = new File(ScanConst.DecompressFilePath + MD5 + "/META-INF/");
         File[] files = parent.listFiles();
         boolean found = false;
         for (File ff : files) {
@@ -76,7 +77,7 @@ public class CertInfoServiceImpl implements CertInfoService {
                     bf.append("\n");
                 }
                 this.certInfo = bf.toString();*/
-                String location="/home/cary/Test/demo/zipped_apks/"+MD5+"/META-INF/"+certFile;
+                String location=ScanConst.DecompressFilePath+MD5+"/META-INF/"+certFile;
                 String info=this.byMyOwn(location);
                 this.certInfo=info;
             } catch (Exception e) {

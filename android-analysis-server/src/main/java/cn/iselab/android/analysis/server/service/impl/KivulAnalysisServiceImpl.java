@@ -1,5 +1,6 @@
 package cn.iselab.android.analysis.server.service.impl;
 
+import cn.iselab.android.analysis.server.constant.ScanConst;
 import cn.iselab.android.analysis.server.dao.CheckListDao;
 import cn.iselab.android.analysis.server.data.*;
 import cn.iselab.android.analysis.server.service.FormatFileService;
@@ -70,12 +71,12 @@ public class KivulAnalysisServiceImpl implements KivulAnalysisService {
         Runtime run = Runtime.getRuntime();
         BufferedReader br = null;
 //        File report = new File("/home/cary/Test/demo/zipped_apks/" + MD5 + "/report.txt");
-        File report = new File("/home/cary/Project/static-analysis-web/demo/zipped_apks/" + MD5 + "/report.txt");
+        File report = new File(ScanConst.DecompressFilePath + MD5 + "/report.txt");
         try {
             System.out.println("[Info] The apk had not been analyzed.");
             System.out.println("[Info] Start androbugs analysis...");
             Process process = run.exec("python /home/cary/Project/AndroBugs_Framework/androbugs.py -f "
-                    + "/home/cary/Test/demo/zipped_apks/" + MD5 + "/" + MD5 + ".apk" + " -o /home/cary/Test/demo/zipped_apks/" + MD5);
+                    + ScanConst.DecompressFilePath + MD5 + "/" + MD5 + ".apk" + " -o " + ScanConst.DecompressFilePath + MD5);
             br = new BufferedReader(new InputStreamReader(process.getInputStream(), "UTF8"));
             String lineText = "";
             while ((lineText = br.readLine()) != null) {

@@ -1,6 +1,8 @@
 package cn.iselab.android.analysis.server.web.utils;
 
+import cn.iselab.android.analysis.server.constant.ResStatus;
 import cn.iselab.android.analysis.server.constant.ScanConst;
+import cn.iselab.android.analysis.server.constant.ScanType;
 
 import java.io.*;
 import java.math.BigInteger;
@@ -115,5 +117,24 @@ public class FileOperationUtils {
             e.printStackTrace();
         }
         System.out.println(file + "解压成功");
+    }
+
+    /**
+     * Store the upload file to the curWorkPath/MD5/
+     * @param uuid
+     */
+    public static void storeUploadFile(String uuid, String originalFileName, byte[] uploadFileBytes) {
+        String uploadFileDir = ScanConst.WorkPath + File.separator + uuid;
+        mkdirIfNotExists(uploadFileDir);
+        String scanFileName = uploadFileDir + File.separator + originalFileName;
+
+        try {
+            BufferedOutputStream out = new BufferedOutputStream(new FileOutputStream(new File(scanFileName)));
+            out.write(uploadFileBytes);
+            out.flush();
+            out.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

@@ -118,7 +118,7 @@ public class FormatFileServiceImpl implements FormatFileService {
             case "SSL Implementation Checking (Verifying Host Name in Fields)":re="singleOrshow";break;
 
             //Done
-            case "App Sandbox Permission Checking":re="SandBox";break;
+            case "SC Sandbox Permission Checking":re="SandBox";break;
 
             //TODO
             //No demo to verify

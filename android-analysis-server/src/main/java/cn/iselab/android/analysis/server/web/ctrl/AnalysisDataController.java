@@ -8,6 +8,8 @@ import cn.iselab.android.analysis.server.service.*;
 import cn.iselab.android.analysis.server.web.data.ApkVO;
 import cn.iselab.android.analysis.server.web.data.FormatData.FormatFileTranslateVO;
 import cn.iselab.android.analysis.server.web.data.FormatData.FormatFileVO;
+import cn.iselab.android.analysis.server.web.data.SCVO;
+import cn.iselab.android.analysis.server.web.data.SCVulVO;
 import cn.iselab.android.analysis.server.web.data.VulnerabilityVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,6 +19,12 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class AnalysisDataController {
+    @Autowired
+    private SCVulService scVulService;
+
+    @Autowired
+    private SCService scService;
+
     @Autowired
     private ApkService as;
 
@@ -32,10 +40,15 @@ public class AnalysisDataController {
     @Autowired
     private CertInfoService certInfoService;
 
-    @RequestMapping(value = "/apks", method = RequestMethod.GET)
-    public List<ApkVO> getApks(@RequestParam(value="userid", required=false) String userid) {
-        ArrayList<ApkVO> apks = as.findAllApk();
-        return apks;
+//    @RequestMapping(value = "/apks", method = RequestMethod.GET)
+//    public List<ApkVO> getApks(@RequestParam(value="userid", required=false) String userid) {
+//        ArrayList<ApkVO> apks = as.findAllApk();
+//        return apks;
+//    }
+
+    @RequestMapping(value = "/scs", method = RequestMethod.GET)
+    public List<SCVO> getSCs(@RequestParam(value="userid", required=false) String userid) {
+        return scService.findAllSC();
     }
 
     @RequestMapping(value = "/CertInfo", method = RequestMethod.GET)
@@ -48,6 +61,11 @@ public class AnalysisDataController {
     public Apk getApkInfo(@RequestParam("MD5") String MD5) {
         Apk apk=as.findApkByMD5(MD5);
         return apk;
+    }
+
+    @RequestMapping(value = "/sc", method = RequestMethod.GET)
+    public SC getSCInfo(@RequestParam("MD5") String MD5) {
+        return scService.findByMd5(MD5);
     }
 
     @RequestMapping(value = "/analysisTime", method = RequestMethod.GET)
@@ -128,13 +146,21 @@ public class AnalysisDataController {
         return re;
     }
 
-
+    /**
+     * Process vulnerability belongs to the md5
+     * @param MD5
+     * @return
+     */
     @RequestMapping(value = "/vulnerability", method = RequestMethod.GET)
-    public ArrayList<VulnerabilityVO> getAllVulnerability(@RequestParam("MD5") String MD5) {
+    public ArrayList<SCVulVO> getAllVulnerability(@RequestParam("MD5") String MD5) {
         //MD5="9ad368a091028d3988429b92eaec36b9";
-        //Sss.getCommunication(MD5);
-        ArrayList<VulnerabilityVO> re=ss.getAllVulnerability(MD5);
-        return re;
+        return scVulService.getAllSCVul(MD5);
     }
+//    @RequestMapping(value = "/vulnerability", method = RequestMethod.GET)
+//    public ArrayList<VulnerabilityVO> getAllVulnerability(@RequestParam("MD5") String MD5) {
+//        //MD5="9ad368a091028d3988429b92eaec36b9";
+//        //Sss.getCommunication(MD5);
+//        return ss.getAllVulnerability(MD5);
+//    }
 }
 
