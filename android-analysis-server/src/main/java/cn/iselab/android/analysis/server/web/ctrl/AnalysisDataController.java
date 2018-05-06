@@ -5,12 +5,9 @@ import java.util.List;
 
 import cn.iselab.android.analysis.server.data.*;
 import cn.iselab.android.analysis.server.service.*;
-import cn.iselab.android.analysis.server.web.data.ApkVO;
+import cn.iselab.android.analysis.server.web.data.*;
 import cn.iselab.android.analysis.server.web.data.FormatData.FormatFileTranslateVO;
 import cn.iselab.android.analysis.server.web.data.FormatData.FormatFileVO;
-import cn.iselab.android.analysis.server.web.data.SCVO;
-import cn.iselab.android.analysis.server.web.data.SCVulVO;
-import cn.iselab.android.analysis.server.web.data.VulnerabilityVO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -19,6 +16,9 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class AnalysisDataController {
+    @Autowired
+    private SCVulRefService scVulRefService;
+
     @Autowired
     private SCVulService scVulService;
 
@@ -68,6 +68,15 @@ public class AnalysisDataController {
         return scService.findByMd5(MD5);
     }
 
+//    @RequestMapping(value = "/analysisTime", method = RequestMethod.GET)
+//    public RecentAnalysis getAnalysisTime(@RequestParam("MD5") String MD5) {
+//        Apk apk=as.findApkByMD5(MD5);
+//        System.out.println(MD5);
+//        String apkid=apk.getId()+"";
+//        System.out.println(apkid);
+//        RecentAnalysis re=recentAnalysisService.findRecentAnalysis(apkid);
+//        return re;
+//    }
     @RequestMapping(value = "/analysisTime", method = RequestMethod.GET)
     public RecentAnalysis getAnalysisTime(@RequestParam("MD5") String MD5) {
         Apk apk=as.findApkByMD5(MD5);
@@ -109,6 +118,7 @@ public class AnalysisDataController {
         String type="Database";
         return ss.getVulnerability(MD5,type);
     }
+
     @RequestMapping(value = "/permission", method = RequestMethod.GET)
     public ArrayList<VulnerabilityVO> getPermission(@RequestParam("MD5") String MD5) {
         //MD5="9ad368a091028d3988429b92eaec36b9";
@@ -116,6 +126,7 @@ public class AnalysisDataController {
         String type="Permission";
         return ss.getVulnerability(MD5,type);
     }
+
     @RequestMapping(value = "/webview", method = RequestMethod.GET)
     public ArrayList<VulnerabilityVO> getWebview(@RequestParam("MD5") String MD5) {
         //MD5="9ad368a091028d3988429b92eaec36b9";
@@ -123,6 +134,7 @@ public class AnalysisDataController {
         String type="Webview";
         return ss.getVulnerability(MD5,type);
     }
+
     @RequestMapping(value = "/other", method = RequestMethod.GET)
     public ArrayList<VulnerabilityVO> getOther(@RequestParam("MD5") String MD5) {
         //MD5="9ad368a091028d3988429b92eaec36b9";
@@ -131,19 +143,33 @@ public class AnalysisDataController {
         return ss.getVulnerability(MD5,type);
     }
 
+//    @RequestMapping(value = "/detail", method = RequestMethod.GET)
+//    public VulnerabilityVO getDetail(@RequestParam("MD5") String MD5,@RequestParam("title") String title) {
+//        //MD5="9ad368a091028d3988429b92eaec36b9";
+//        //Sss.getCommunication(MD5);
+//        VulnerabilityVO re=ss.getDetail(MD5,title);
+//        return re;
+//    }
     @RequestMapping(value = "/detail", method = RequestMethod.GET)
-    public VulnerabilityVO getDetail(@RequestParam("MD5") String MD5,@RequestParam("title") String title) {
+    public SCVulVO getDetail(@RequestParam("MD5") String MD5,@RequestParam("title") String title) {
         //MD5="9ad368a091028d3988429b92eaec36b9";
         //Sss.getCommunication(MD5);
-        VulnerabilityVO re=ss.getDetail(MD5,title);
-        return re;
+        return scVulService.getDetail(MD5, title);
     }
 
+
+//    @RequestMapping(value = "/formatDetail", method = RequestMethod.GET)
+//    public FormatFileTranslateVO getFormatFiles(@RequestParam("MD5") String MD5, @RequestParam("title") String title){
+//        ArrayList<FormatFileVO> list=formatFileService.getFormatFile(MD5,title);
+//        FormatFileTranslateVO re=new FormatFileTranslateVO(formatFileService.JudgeType(title),list);
+//        return re;
+//    }
+
     @RequestMapping(value = "/formatDetail", method = RequestMethod.GET)
-    public FormatFileTranslateVO getFormatFiles(@RequestParam("MD5") String MD5, @RequestParam("title") String title){
-        ArrayList<FormatFileVO> list=formatFileService.getFormatFile(MD5,title);
-        FormatFileTranslateVO re=new FormatFileTranslateVO(formatFileService.JudgeType(title),list);
-        return re;
+    public ArrayList<SCVulRefVO> getFormatFiles(@RequestParam("MD5") String MD5, @RequestParam("title") String title){
+//        ArrayList<FormatFileVO> list=formatFileService.getFormatFile(MD5,title);
+//        FormatFileTranslateVO re=new FormatFileTranslateVO(formatFileService.JudgeType(title),list);
+        return scVulRefService.getSCVulRef(MD5, title);
     }
 
     /**

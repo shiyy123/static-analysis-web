@@ -8,4 +8,5 @@ import java.util.ArrayList;
 public interface SCVulService {
     public ArrayList<SCVulVO> getAllSCVul(String md5);
     public Long save(SCVul scVul);
+    public SCVulVO getDetail(String MD5, String name);
 }

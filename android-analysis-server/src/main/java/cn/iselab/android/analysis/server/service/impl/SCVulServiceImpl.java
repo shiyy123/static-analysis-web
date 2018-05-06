@@ -27,7 +27,6 @@ public class SCVulServiceImpl implements SCVulService {
     public ArrayList<SCVulVO> getAllSCVul(String md5) {
         ArrayList<SCVulVO> scVulVOArrayList = new ArrayList<>();
         Long scId = scDao.findByMd5(md5).getId();
-        System.out.println(scId);
         List<SCVul> scVuls = scVulDao.findByScId(scId);
         for(SCVul scVul: scVuls){
             scVulVOArrayList.add(new SCVulVO(scVul));
@@ -39,5 +38,11 @@ public class SCVulServiceImpl implements SCVulService {
     public Long save(SCVul scVul) {
         SCVul scVul1  = scVulRepository.save(scVul);
         return scVul1.getId();
+    }
+
+    @Override
+    public SCVulVO getDetail(String MD5, String name) {
+        Long scId = scDao.findByMd5(MD5).getId();
+        return new SCVulVO(scVulDao.findByScIdAndName(scId, name));
     }
 }

@@ -80,43 +80,54 @@ public class FileOperationUtils {
     }
 
     /**
-     * Decompress the compressed file(zip)
-     * @param file: the file to decompress
-     * @param path: the dir to store the decompress file
-     *
+     * uncompressed the zipped file
+     * @param storeFile the zip file
+     * @param outPath the path of the unzipped file
      */
-    public static void unzip(String file, String path) {
+    public static String deCompressZip(File storeFile, String outPath){
+        File file = storeFile;
+        String temp = outPath;
+        FileInputStream fis;
+        ZipInputStream zins;
+        String compressDir = null;
+        // do decompress
         try {
-            // the zipped file path
-            ZipInputStream Zin = new ZipInputStream(new FileInputStream(ScanConst.ScanFilePath + file));
-            BufferedInputStream Bin = new BufferedInputStream(Zin);
-            String Parent = path; // output dir
-            File Fout = null;
-            ZipEntry entry;
-            try {
-                while ((entry = Zin.getNextEntry()) != null && !entry.isDirectory()) {
-                    Fout = new File(Parent, entry.getName());
-                    if (!Fout.exists()) {
-                        (new File(Fout.getParent())).mkdirs();
-                    }
-                    FileOutputStream out = new FileOutputStream(Fout);
-                    BufferedOutputStream Bout = new BufferedOutputStream(out);
-                    int b;
-                    while ((b = Bin.read()) != -1) {
-                        Bout.write(b);
-                    }
-                    Bout.close();
-                    out.close();
+            fis = new FileInputStream(file);
+            zins = new ZipInputStream(fis);
+            ZipEntry ze;
+            byte[] ch = new byte[256];
+            boolean isCompressedDir = true;
+            while ((ze = zins.getNextEntry()) != null) {
+                File zfile = new File(temp + "/" + ze.getName());
+                File fpath = new File(zfile.getParentFile().getPath());
+                if(isCompressedDir){
+                    compressDir = zfile.getPath();
+                    isCompressedDir = false;
                 }
-                Bin.close();
-                Zin.close();
-            } catch (IOException e) {
-                e.printStackTrace();
+                if (ze.isDirectory()) {
+                    if (!zfile.exists())
+                        zfile.mkdirs();
+                    zins.closeEntry();
+                } else {
+                    if (!fpath.exists())
+                        fpath.mkdirs();
+                    FileOutputStream fouts = new FileOutputStream(zfile);
+                    int i;
+                    while ((i = zins.read(ch)) != -1)
+                        fouts.write(ch, 0, i);
+                    zins.closeEntry();
+                    fouts.close();
+                }
             }
-        } catch (FileNotFoundException e) {
+            fis.close();
+            zins.close();
+        } catch (Exception e) {
             e.printStackTrace();
+//            file.delete();
+            System.err.println("File" + file.toString() + "decompressed failed, reason" + e.toString());
+            System.exit(1);
         }
-        System.out.println(file + "解压成功");
+        return compressDir;
     }
 
     /**
@@ -136,5 +147,62 @@ public class FileOperationUtils {
         } catch (Exception e) {
             e.printStackTrace();
         }
+    }
+
+    /**
+     * Delete the folder
+     * @param folderPath
+     */
+    public static void delFolder(String folderPath) {
+        try {
+            delAllFile(folderPath); // delete all content int the folder
+            String filePath = folderPath;
+            filePath = filePath.toString();
+            java.io.File myFilePath = new java.io.File(filePath);
+            myFilePath.delete(); // delete empty folder
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    /**
+     * Delete all files under the path
+     * @param path
+     * @return
+     */
+    public static boolean delAllFile(String path) {
+        boolean flag = false;
+        File file = new File(path);
+        if (!file.exists()) {
+            return flag;
+        }
+        if (!file.isDirectory()) {
+            return flag;
+        }
+        String[] tempList = file.list();
+        File temp = null;
+        for (int i = 0; i < tempList.length; i++) {
+            if (path.endsWith(File.separator)) {
+                temp = new File(path + tempList[i]);
+            } else {
+                temp = new File(path + File.separator + tempList[i]);
+            }
+            if (temp.isFile()) {
+                temp.delete();
+            }
+            if (temp.isDirectory()) {
+                // Delete all file under the folder
+                delAllFile(path + "/" + tempList[i]);
+                // Delete empty folder
+                delFolder(path + "/" + tempList[i]);
+                flag = true;
+            }
+        }
+        return flag;
+    }
+
+    public static void main(String[] args){
+        delFolder("/home/cary/Test/Test");
+
     }
 }

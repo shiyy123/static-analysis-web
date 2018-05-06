@@ -19,15 +19,15 @@ public class HelloController {
 
     @RequestMapping(value = "/analysis", method = RequestMethod.GET)
     public void analysis(@RequestParam("MD5") String MD5, HttpServletResponse response) {
-        System.out.println("MD5:"+MD5);
+//        System.out.println("MD5:"+MD5);
         //MD5="9ad368a091028d3988429b92eaec36b9";
 
 //        int result=as.analysis(MD5);
         int result = scAnalysisService.analysis(MD5);
 
-        if(result==1){
+        if(result == 1) {
             response.setStatus(ResStatus.analysis_error);
-        }else {
+        } else {
             response.setStatus(ResStatus.success);
         }
         //new Thread(new Thread1(MD5)).start();

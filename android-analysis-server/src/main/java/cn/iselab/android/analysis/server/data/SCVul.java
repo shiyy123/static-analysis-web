@@ -26,14 +26,17 @@ public class SCVul {
     @Column
     private String vulType;
 
-    @Column(columnDefinition="MEDIUMTEXT", length = 16777215)
+    @Column(columnDefinition = "MEDIUMTEXT", length = 16777215)
     private String extra;
 
-    @Column(columnDefinition="MEDIUMTEXT", length = 16777215)
+    @Column(columnDefinition = "MEDIUMTEXT", length = 16777215)
     private String name;
 
-    @Column(columnDefinition="MEDIUMTEXT", length = 16777215)
+    @Column(columnDefinition = "MEDIUMTEXT", length = 16777215)
     private String description;
+
+    @Column(columnDefinition = "MEDIUMTEXT", length = 16777215)
+    private String vulClassify;
 
     @Column
     private String updateTime;
@@ -44,7 +47,7 @@ public class SCVul {
     public SCVul(){
     }
 
-    public SCVul(Long scId, String targetTaskId, String riskLevel, String solution, String vulType, String extra, String name, String description, String updateTime, String source){
+    public SCVul(Long scId, String targetTaskId, String riskLevel, String solution, String vulType, String extra, String name, String description, String vulClassify, String updateTime, String source){
         super();
         this.scId = scId;
         this.targetTaskId = targetTaskId;
@@ -54,6 +57,7 @@ public class SCVul {
         this.extra = extra;
         this.name = name;
         this.description = description;
+        this.vulClassify = vulClassify;
         this.updateTime = updateTime;
         this.source = source;
     }
@@ -144,5 +148,13 @@ public class SCVul {
 
     public void setSource(String source) {
         this.source = source;
+    }
+
+    public String getVulClassify() {
+        return vulClassify;
+    }
+
+    public void setVulClassify(String vulClassify) {
+        this.vulClassify = vulClassify;
     }
 }

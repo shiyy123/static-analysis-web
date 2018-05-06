@@ -22,6 +22,8 @@ public class SCVulVO {
 
     private String description;
 
+    private String vulClassify;
+
     private String updateTime;
 
     private String source;
@@ -39,11 +41,12 @@ public class SCVulVO {
         this.extra = scVul.getExtra();
         this.name = scVul.getName();
         this.description = scVul.getDescription();
+        this.vulClassify = scVul.getVulClassify();
         this.updateTime = scVul.getUpdateTime();
         this.source = scVul.getSource();
     }
 
-    public SCVulVO(Long id, Long scId, String targetTaskId, String riskLevel, String solution, String vulType, String extra, String name, String description, String updateTime, String source) {
+    public SCVulVO(Long id, Long scId, String targetTaskId, String riskLevel, String solution, String vulType, String extra, String name, String description, String vulClassify, String updateTime, String source) {
         this.id = id;
         this.scId = scId;
         this.targetTaskId = targetTaskId;
@@ -53,6 +56,7 @@ public class SCVulVO {
         this.extra = extra;
         this.name = name;
         this.description = description;
+        this.vulClassify = vulClassify;
         this.updateTime = updateTime;
         this.source = source;
     }
@@ -143,5 +147,13 @@ public class SCVulVO {
 
     public void setSource(String source) {
         this.source = source;
+    }
+
+    public String getVulClassify() {
+        return vulClassify;
+    }
+
+    public void setVulClassify(String vulClassify) {
+        this.vulClassify = vulClassify;
     }
 }

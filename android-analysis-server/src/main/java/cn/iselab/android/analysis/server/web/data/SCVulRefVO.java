@@ -1,5 +1,7 @@
 package cn.iselab.android.analysis.server.web.data;
 
+import cn.iselab.android.analysis.server.data.SCVulRef;
+
 public class SCVulRefVO {
     private Long id;
 
@@ -12,6 +14,14 @@ public class SCVulRefVO {
     private String location;
 
     public SCVulRefVO(){
+    }
+
+    public SCVulRefVO(SCVulRef scVulRef) {
+        this.id = scVulRef.getId();
+        this.vulId = scVulRef.getVulId();
+        this.solution = scVulRef.getSolution();
+        this.description = scVulRef.getDescription();
+        this.location = scVulRef.getLocation();
     }
 
     public SCVulRefVO(Long id, Long vulId, String solution, String description, String location) {

@@ -50,6 +50,7 @@ public class UploadController {
             String uuid = UUID.randomUUID().toString();
             String curWorkPath = ScanConst.WorkPath + File.separator + uuid;
             String scanFilePath = curWorkPath + File.separator + originalFileName;
+
             // Store the uploaded file
             try {
                 FileOperationUtils.storeUploadFile(uuid, originalFileName, file.getBytes());
@@ -71,15 +72,13 @@ public class UploadController {
             // Get scan file size
             String scanFileSize = CommonUtils.getFileSize(scanFile);
 
-            String platform = PlatformType.Android.name();
-            if(type.equals(ScanType.ipa.name())) {
-                platform = PlatformType.iOS.name();
-            }else if (type.equals(ScanType.zip.name())) {
-                platform = PlatformType.SourceCode.name();
-            }
+            String platform = CommonUtils.getScanFileType(scanFilePath).name();
 
+            // Begin to save the data to the database,
+            // if the upload file is ipa/ios_source, when analysis it,
+            // it needs the sc_Id to do analysis, and store data to database by the scId
             SC sc_find = scService.findByMd5(md5);
-            if(sc_find == null){
+            if(sc_find == null) {
                 // Never scan this file before
                 SC sc = new SC(originalFileName, md5, platform, ScanStatus.scan, uuid);
                 // save sc to database

@@ -77,7 +77,6 @@ public class SecurityServiceImpl implements SecurityService {
         return re;
     }
 
-
     public VulnerabilityVO getDetail(String MD5,String title){
         //System.out.println(title);
         VulnerabilityVO re=null;

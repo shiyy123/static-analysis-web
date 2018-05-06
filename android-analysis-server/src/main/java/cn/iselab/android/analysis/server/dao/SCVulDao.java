@@ -7,4 +7,5 @@ import java.util.List;
 
 public interface SCVulDao extends JpaRepository<SCVul, Long>{
     public List<SCVul> findByScId(Long scId);
+    public SCVul findByScIdAndName(Long scId, String name);
 }

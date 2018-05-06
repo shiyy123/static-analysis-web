@@ -6,7 +6,10 @@ public class ScanConst {
     public static String ScanFilePath = "/home/cary/Test/demo/ScanFiles/";
     public static String WorkPath = "/home/cary/Test/demo/WorkPath/";
     public static String DecompressFilePath = "/home/cary/Test/demo/DecompressFile/";
+    public static String TempFilePath = "/home/cary/Test/demo/TempFile/";
 
+    public static String MacUrl = "http://127.0.0.1";
+    public static String MacPort = "5000";
     /*
      Do some preparations, create directory
      */
@@ -14,5 +17,6 @@ public class ScanConst {
         FileOperationUtils.mkdirIfNotExists(ScanFilePath);
         FileOperationUtils.mkdirIfNotExists(WorkPath);
         FileOperationUtils.mkdirIfNotExists(DecompressFilePath);
+        FileOperationUtils.mkdirIfNotExists(TempFilePath);
     }
 }
